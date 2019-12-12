@@ -5,24 +5,24 @@
 }
 
 body{
-   background-color:olivedrab;
+   background-color:;
 }
 #logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    filter: invert(100%);
+    filter: invert(0%);
     clip-path: inset(5% 5% 5% 5%);
 }
 #logo:hover{
-    filter: invert(100%);
+    filter: invert(0%);
 }
 #logo-header{
     position: absolute;
     filter: invert(0%);
     clip-path: inset(5% 5% 5% 5%);
-    filter: invert(100%);
+    filter: invert(0%);
 }
 #link-header{
     padding-left: 130px;
@@ -60,13 +60,13 @@ a.main-link{
 #content{
     margin: auto;
     width: 60%;
-    min-width: 350px;
+    min-width: 300px;
     font-family: helvetica;
 }
 a{
     text-decoration: none;
     font-family: helvetica;
-    color: white;
+    color: black;
 }
 a:hover{
     color: red;
@@ -97,9 +97,9 @@ a:visited{
 .artist-profile{
     height: 200px;
     width: 200px;
-    border-style: solid;
+    /*border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: black;*/
 }
 .artist-profile:hover{
   filter:invert(100%);
@@ -110,19 +110,30 @@ a:visited{
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+    #header{
+        width:100%;
+    }
+    #link-header{
+        padding-left: 100px;
+        padding-top: 43px;
+    }
+    #logo-header{
+        float: left;
+    }
     .grid-container{
         grid-template-columns: auto;
+        width: 90%;
+        padding: none;
     }
     .grid-container > div{
         padding-left: 0px;
     }
     
     .artist-profile{
-        height: 350px;
-        width: 350px;
+        height: 20%;
     }
     #header-link{
-    padding-left: 27px;
+    padding-left: 20px;
 }
 }
 
